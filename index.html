@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Player</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/734f757913.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="music_player">
+        <nav>
+          <div class="circle">
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+          <div class="circle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+        <img src="thumbnail.jpg" class="song-img" />
+        <h1>BAHARA</h1>
+        <P>Made by Asifa Qasim ❤</P>
+        <audio controls id = "song">
+          <source src="/Music/bahara.mp3" type="audio/mpeg">
+        </audio>
+        <input type="range" value="0" id="progress">
+        <div class="controls">
+          <div><i class="fa-solid fa-rotate-left" id = "Pre"></i></div>
+          <div onclick ="playpause()"><i class="fa-regular fa-circle-play"  id ="playpause"></i></div>
+          <div><i class="fa-solid fa-rotate-right"  id = "next"></i></div>
+        </div>
+      </div>
+    </div>
+    <script src = "script.js"></script>
+  </body>
+</html>
